@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="placeholder1">Enter hours worked</string>
+    <string name="placeholder2">Enter hourly rate</string>
+    <string name="submit">Submit</string>
+    <string name="empty1"> </string>
+    <string name="empty2"> </string>
+    <string name="button2">About</string>
+    <string name="fullName">Mehlika Tozlu</string>
+    <string name="studentID">101337672</string>
+</resources>

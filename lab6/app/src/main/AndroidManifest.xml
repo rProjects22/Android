@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ca.georgebrown.lab6">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <!--skipping the step of adding a service for now.
+    second step is requesting the permission from the user, its done in the run time.
+    we have two options -manage by ourself or request a permission thorough the library..
+    The same thing that we used here are going to be used in the main activity run time too.
+    three ways - first time running the application and requesting the permission, not the first time
+    user denied and we have to handle the situation. Most of the time this type of applications
+    wont work without a permission.
+    why you need to use a permission in your applications?
+    you have to receive the request from the user with a function. which have parameters that is link to
+    our original request. You compare that against what your expectations are and then you can perform.-->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lab6"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

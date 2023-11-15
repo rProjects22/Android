@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lab5</string>
+    <string name="shared_preferences_key">MY_KEY</string>
+    <string name="preference_key">USER_NAME</string>
+</resources>
